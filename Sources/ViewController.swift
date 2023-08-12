@@ -1,4 +1,5 @@
 import UIKit
+import FLEX
 
 final class ViewController: UIViewController {
     private let subView = UIButton(configuration: .bordered())
@@ -41,6 +42,7 @@ final class ViewController: UIViewController {
 //        if UIApplication.shared.canOpenURL(url) {
 //            UIApplication.shared.open(url)
 //        }
+        FLEXManager.shared.showExplorer()
     }
 }
 
