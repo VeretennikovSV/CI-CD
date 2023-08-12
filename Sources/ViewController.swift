@@ -36,6 +36,10 @@ final class ViewController: UIViewController {
         ])
     }
     
+    func makeSomeAction() -> Int {
+        2 + 3
+    }
+    
     @objc
     private func deeplinkToRaif() {
 //        guard let url = URL(string: "ronline://\(pathTo)") else { return }
@@ -44,6 +48,7 @@ final class ViewController: UIViewController {
 //        }
         FLEXManager.shared.showExplorer()
     }
+    
 }
 
 extension ViewController: UITextFieldDelegate {

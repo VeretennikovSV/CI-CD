@@ -5,9 +5,8 @@ platform :ios do
   global_xcode_path = "/Applications/Xcode_14.3.1.app"
 
   desc "My first fastlane func"
-  private_lane :my_lane do |options|
-        fastlane action [cocoapods]
-        print "Install cocoapods"
+  lane :my_lane do |options|
+        fastlane action [run_tests]
   end
 
   desc "Description of what the lane does"

@@ -63,6 +63,30 @@ let project = Project(
             environment: [:],
             launchArguments: [],
             additionalFiles: []
+        ),
+        Target(
+            name: "DeeplinkingTests",
+            platform: .iOS,
+            product: .unitTests,
+            bundleId: "com.Veretennikov.SV",
+            infoPlist: .default,
+            sources: [
+                "Tests/**"
+            ],
+            resources: [],
+            copyFiles: nil,
+            headers: nil,
+            entitlements: nil,
+            scripts: [],
+            dependencies: [
+                .target(name: "Deeplinking")
+            ],
+            settings: nil,
+            coreDataModels: [],
+            environment: [:],
+            launchArguments: [],
+            additionalFiles: [],
+            buildRules: []
         )
     ]
 )
