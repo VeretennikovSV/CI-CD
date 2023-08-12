@@ -39,3 +39,10 @@ jobs:
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
 
+      - name: Run Tests (No cache)
+        if: steps.setup.outputs.cache-hit != 'true'
+        run: bundle exec fastlane my_lane
+
+      - name: Run Tests (No cache)
+        if: steps.setup.outputs.cache-hit == 'true'
+        run: bundle exec fastlane my_lane skip_package_dependencies_resolution:true
