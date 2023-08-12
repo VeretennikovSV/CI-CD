@@ -3,11 +3,11 @@ name: Pull Request
 on:
   pull_request:
     branches:
-      - develop
+      - origin
   workflow_dispatch:
 
 jobs:
-  test:
+  testing:
     runs-on: macos-11
     steps:
       - uses: actions/checkout@v2
