@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='DeeplinkingTests.xctest' tests='1' failures='1'>
+  <testsuite name='DeeplinkingTests.MyAppTests' tests='1' failures='1'>
+    <testcase classname='DeeplinkingTests.MyAppTests' name='testSomeFunc'>
+      <failure message='XCTAssertEqual failed: (&quot;5&quot;) is not equal to (&quot;4&quot;)'>Tests/UnitTests/UnitTests.swift:14</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
