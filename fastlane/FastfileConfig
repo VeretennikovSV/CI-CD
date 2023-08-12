@@ -1,0 +1,8 @@
+workspace: "Deeplinking.xcworkspace"
+scheme: "DeeplinkingTests"
+sdk "iphonesimulator"
+code_coverage true
+test_devices: "iPhone 11"
+xcargs '-parallelizeTargets'
+prelaunch_simulator true
+xcode_version: "14.2"
