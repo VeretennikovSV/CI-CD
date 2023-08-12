@@ -38,6 +38,7 @@ let infoPlist: [String: InfoPlist.Value] = [
 // Creates our project using a helper function defined in ProjectDescriptionHelpers
 let project = Project(
     name: "Deeplinking",
+    packages: [],
     targets: [
         Target(
             name: "Deeplinking",

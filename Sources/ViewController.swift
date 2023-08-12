@@ -37,10 +37,10 @@ final class ViewController: UIViewController {
     
     @objc
     private func deeplinkToRaif() {
-        guard let url = URL(string: "ronline://\(pathTo)") else { return }
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url)
-        }
+//        guard let url = URL(string: "ronline://\(pathTo)") else { return }
+//        if UIApplication.shared.canOpenURL(url) {
+//            UIApplication.shared.open(url)
+//        }
     }
 }
 
