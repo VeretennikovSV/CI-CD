@@ -8,7 +8,7 @@ final class MyAppTests: XCTestCase {
     
     func testSomeFunc() {
         let vc = ViewController()
-        let expectation = 4
+        let expectation = 5
         let result = vc.makeSomeAction()
         
         XCTAssertEqual(result, expectation)

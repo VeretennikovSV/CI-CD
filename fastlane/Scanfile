@@ -1,0 +1,7 @@
+workspace "Deeplinking.xcworkspace"
+scheme "Deeplinking"
+sdk "iphonesimulator"
+code_coverage true
+device "iPhone 14 Pro"
+xcargs '-parallelizeTargets'
+prelaunch_simulator true

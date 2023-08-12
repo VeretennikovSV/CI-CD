@@ -6,7 +6,10 @@ platform :ios do
 
   desc "My first fastlane func"
   lane :my_lane do |options|
-        fastlane action [run_tests]
+        scan(
+          clean: options[:clean],
+          skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
+        )
   end
 
   desc "Description of what the lane does"
