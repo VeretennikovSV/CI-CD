@@ -37,7 +37,7 @@ final class ViewController: UIViewController {
     }
     
     func makeSomeAction() -> Int {
-        2 + 22
+        2 + 1
     }
     
     @objc
