@@ -22,6 +22,7 @@ jobs:
           xcode-version: latest-stable
 
       - uses: ruby/setup-ruby@v1
+        ruby-version: '2.7.6'
 
       - name: Install Bundler
         run: gem install bundler
