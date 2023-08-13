@@ -1,4 +1,4 @@
-workspace "Deeplinking.xcworkspace"
+workspace "Deeplinking.xcodeproj/Project.xcworkspace"
 scheme "Deeplinking"
 sdk "iphonesimulator"
 code_coverage true
