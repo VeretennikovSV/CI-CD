@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2789F8EF0DADFC0604A4856D /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D5C6063C0D629D8C83944 /* UnitTests.swift */; };
+		8EF67C1F8052B05B694D4822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24233B05FB72A649BF18A396 /* ViewController.swift */; };
+		B6C485E5E1D3C690FA3D8C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */; };
+		D7A51847C8E4E1D380883550 /* Pods_Deeplinking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9E40A59E5EE59BAD42BCB2 /* Pods_Deeplinking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04C5E09F6A3F302011977132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC9C268FAC744CDBD276E9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46CF7172B56B8AF15A305B15;
+			remoteInfo = Deeplinking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1DCF41AE48F40D007DC3E2FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BA315455473610C1ECBE9D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		234FBD5FC025E16D98758C8A /* Pods-Deeplinking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deeplinking.debug.xcconfig"; path = "Target Support Files/Pods-Deeplinking/Pods-Deeplinking.debug.xcconfig"; sourceTree = "<group>"; };
+		24233B05FB72A649BF18A396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA426D5F1EE253805D44AF10 /* Pods-Deeplinking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deeplinking.release.xcconfig"; path = "Target Support Files/Pods-Deeplinking/Pods-Deeplinking.release.xcconfig"; sourceTree = "<group>"; };
+		E96D5C6063C0D629D8C83944 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		EAA516B1CC6D49A470F3F803 /* DeeplinkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DeeplinkingTests-Info.plist"; sourceTree = "<group>"; };
+		EB9E32BE3FCEC5EA0031D9BA /* DeeplinkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeeplinkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9E40A59E5EE59BAD42BCB2 /* Pods_Deeplinking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deeplinking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA06B872DC0930A61003FAD /* Deeplinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deeplinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54FA378E03971BC720BBA9D /* Deeplinking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Deeplinking-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25A27544155BA3C0E6D68F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE93FB2A5739CD20AE169952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A51847C8E4E1D380883550 /* Pods_Deeplinking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0080FB3F1E003374A8188A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E40A59E5EE59BAD42BCB2 /* Pods_Deeplinking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41E5F4C025F56149A38FFF5A = {
+			isa = PBXGroup;
+			children = (
+				E2BAC8FBCEC733FDA29A3F10 /* Project */,
+				0080FB3F1E003374A8188A8C /* Frameworks */,
+				FE501E3C968216342DBE918A /* Products */,
+				750194BEDCC2D7D4BF1B5577 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4C6BBEFC76DA373BE9C647A3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				24233B05FB72A649BF18A396 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5C121D3CFF2D3C743BF6E86E /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E96D5C6063C0D629D8C83944 /* UnitTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		5C64D9720078E023659C289D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		750194BEDCC2D7D4BF1B5577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				234FBD5FC025E16D98758C8A /* Pods-Deeplinking.debug.xcconfig */,
+				BA426D5F1EE253805D44AF10 /* Pods-Deeplinking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D508F1E75DAF58CC013ED68 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				F54FA378E03971BC720BBA9D /* Deeplinking-Info.plist */,
+				EAA516B1CC6D49A470F3F803 /* DeeplinkingTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		9ED5028AF0829C876354B6C6 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				7D508F1E75DAF58CC013ED68 /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		B208D1DF959534014A50A2AA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C121D3CFF2D3C743BF6E86E /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E2BAC8FBCEC733FDA29A3F10 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				5C64D9720078E023659C289D /* AppDelegate */,
+				9ED5028AF0829C876354B6C6 /* Derived */,
+				4C6BBEFC76DA373BE9C647A3 /* Sources */,
+				B208D1DF959534014A50A2AA /* Tests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		FE501E3C968216342DBE918A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBA06B872DC0930A61003FAD /* Deeplinking.app */,
+				EB9E32BE3FCEC5EA0031D9BA /* DeeplinkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46CF7172B56B8AF15A305B15 /* Deeplinking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29022AF8F5024961B5FEF348 /* Build configuration list for PBXNativeTarget "Deeplinking" */;
+			buildPhases = (
+				55F2D8E382525DEB6CBDC188 /* [CP] Check Pods Manifest.lock */,
+				8DB4A65B1F1CA5DB953CAF3B /* Sources */,
+				ACD8C851A8FF1780B0CC984B /* Resources */,
+				6BA315455473610C1ECBE9D2 /* Embed Frameworks */,
+				DE93FB2A5739CD20AE169952 /* Frameworks */,
+				1F70CB9209F624B080A71181 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deeplinking;
+			productName = Deeplinking;
+			productReference = EBA06B872DC0930A61003FAD /* Deeplinking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5812406BF4C30006B61C22AF /* DeeplinkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02AB901D89AB157416A2EFD /* Build configuration list for PBXNativeTarget "DeeplinkingTests" */;
+			buildPhases = (
+				221A5E5A5A923E1E83BDB1F1 /* Sources */,
+				9D71975794F45550C80EB634 /* Resources */,
+				1DCF41AE48F40D007DC3E2FA /* Embed Frameworks */,
+				25A27544155BA3C0E6D68F5C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				937165D55837A4F58FA8C1CF /* PBXTargetDependency */,
+			);
+			name = DeeplinkingTests;
+			productName = DeeplinkingTests;
+			productReference = EB9E32BE3FCEC5EA0031D9BA /* DeeplinkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC9C268FAC744CDBD276E9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					5812406BF4C30006B61C22AF = {
+						TestTargetID = 46CF7172B56B8AF15A305B15;
+					};
+				};
+			};
+			buildConfigurationList = 5416121E72186E957EBD9045 /* Build configuration list for PBXProject "Deeplinking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 41E5F4C025F56149A38FFF5A;
+			productRefGroup = FE501E3C968216342DBE918A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46CF7172B56B8AF15A305B15 /* Deeplinking */,
+				5812406BF4C30006B61C22AF /* DeeplinkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D71975794F45550C80EB634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACD8C851A8FF1780B0CC984B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F70CB9209F624B080A71181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55F2D8E382525DEB6CBDC188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deeplinking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221A5E5A5A923E1E83BDB1F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2789F8EF0DADFC0604A4856D /* UnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB4A65B1F1CA5DB953CAF3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C485E5E1D3C690FA3D8C16 /* AppDelegate.swift in Sources */,
+				8EF67C1F8052B05B694D4822 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		937165D55837A4F58FA8C1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deeplinking;
+			target = 46CF7172B56B8AF15A305B15 /* Deeplinking */;
+			targetProxy = 04C5E09F6A3F302011977132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F1535513BD5CEAF8A704A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		818D84B679822CADC9BA665A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/DeeplinkingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Veretennikov.SV;
+				PRODUCT_NAME = DeeplinkingTests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deeplinking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deeplinking";
+				TEST_TARGET_NAME = Deeplinking;
+			};
+			name = Release;
+		};
+		ABC15B44AF3375F7D58CDFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/DeeplinkingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Veretennikov.SV;
+				PRODUCT_NAME = DeeplinkingTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deeplinking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deeplinking";
+				TEST_TARGET_NAME = Deeplinking;
+			};
+			name = Debug;
+		};
+		AEA96E3CD05768DBF705E84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B199E85FFAF364407F940A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA426D5F1EE253805D44AF10 /* Pods-Deeplinking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/Deeplinking-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Veretennikov.SV;
+				PRODUCT_NAME = Deeplinking;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5E9E50D8C69CB3514C5CB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234FBD5FC025E16D98758C8A /* Pods-Deeplinking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/Deeplinking-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Veretennikov.SV;
+				PRODUCT_NAME = Deeplinking;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29022AF8F5024961B5FEF348 /* Build configuration list for PBXNativeTarget "Deeplinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E9E50D8C69CB3514C5CB67 /* Debug */,
+				B199E85FFAF364407F940A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5416121E72186E957EBD9045 /* Build configuration list for PBXProject "Deeplinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA96E3CD05768DBF705E84F /* Debug */,
+				7F1535513BD5CEAF8A704A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02AB901D89AB157416A2EFD /* Build configuration list for PBXNativeTarget "DeeplinkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC15B44AF3375F7D58CDFFB /* Debug */,
+				818D84B679822CADC9BA665A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC9C268FAC744CDBD276E9AC /* Project object */;
+}

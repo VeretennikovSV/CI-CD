@@ -59,7 +59,7 @@ DerivedData/
 /*.gcno
 
 ### Projects ###
-*.xcodeproj
+*.xcworkspace
 *.html
 *.juint
 
