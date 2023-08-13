@@ -20,6 +20,9 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
+          
+      - name: Pod Install
+        run: pod install
 
       - uses: ruby/setup-ruby@v1
         with:
