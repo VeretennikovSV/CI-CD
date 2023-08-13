@@ -10,7 +10,7 @@ jobs:
   testing:
     runs-on: macos-13
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
@@ -22,7 +22,9 @@ jobs:
           xcode-version: latest-stable
 
       - uses: ruby/setup-ruby@v1
-        ruby-version: '2.7.6'
+        with:
+          ruby-version: '2.7.6'
+          bundler-cache: true
 
       - name: Install Bundler
         run: gem install bundler
