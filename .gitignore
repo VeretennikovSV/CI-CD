@@ -59,13 +59,13 @@ DerivedData/
 /*.gcno
 
 ### Projects ###
+*.xcodeproj
 *.xcworkspace
 *.html
 *.juint
 
 ### Tuist derived files ###
 graph.dot
-Derived/
 
 ### Tuist managed dependencies ###
 Tuist/Dependencies
