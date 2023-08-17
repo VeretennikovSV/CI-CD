@@ -15,9 +15,6 @@
 *.html
 *.juint
 
-### Tuist derived files ###
-graph.dot
-
 ### Tuist managed dependencies ###
 Tuist/Dependencies
 Pods/
