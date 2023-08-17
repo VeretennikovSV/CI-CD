@@ -6,7 +6,7 @@
 #
 # To enable this hook, rename this file to "pre-receive".
 
-echo sock my cock
+echo sock my cock###############################!!!!!!!!!!!!!!!!!!!!!
 
 if test -n "$GIT_PUSH_OPTION_COUNT"
 then
