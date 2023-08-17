@@ -9,7 +9,7 @@
 /*.gcno
 
 ### Projects ###
-
+*.xcworkspace
 *.html
 *.juint
 
