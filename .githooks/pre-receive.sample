@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+commit_list=$(git log --oneline HEAD...origin)
+REGEX="^(feature|bugfix)\/([a-z]+)\/([0-9]\d)\.([0-9]\d)\.([0-9]\d{3})-([\w\W]+)$"
+
+while read -r commit; do
+  commit_message=$(echo "$commit" | cut -d' ' -f2-)
+  echo  $commit_message
+done <<< "$commit_list"
+
+if ! [[ -z "$REGEX" ]]; then
+  echo "Your commit was rejected due to branching name"
+  echo "Please rename your branch with '$REGEX"
+  exit 1
+fi
+
+exit 0

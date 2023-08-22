@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+commit_list=$(git log --oneline HEAD...origin)
+REGEX="^(feature|bugfix)\/([a-z]+)\/([0-9]\d)\.([0-9]\d)\.([0-9]\d{3})-([\w\W]+)$"
+
+while read -r commit; do
+  commit_message=$(echo "$commit" | cut -d' ' -f2-)
+  echo  $commit_message
+done <<< "$commit_list"
+
+if ! [[ -z "$REGEX" ]]; then
+  echo "Your commit was rejected due to branching name"
+  echo "Please rename your branch with '$REGEX"
+  exit 1
+fi
+
+exit 0
