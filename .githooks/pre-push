@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # An example hook script to verify what is about to be pushed.  Called by "git
 # push" after it has checked the remote status, but before anything has been
 # pushed.  If this script exits with a non-zero status nothing will be pushed.
@@ -22,9 +21,14 @@
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 REGEX="^(feature|bugfix)\/([a-z]+)\/([0-9]\d)\.([0-9]\d)\.([0-9]\d{3})-([\w\W]+)$"
 
-if [[ $BRANCH =~ $REGEX ]]; then
+echo
+printf "\n[pre-push-hook] Parsed branch name: %s." "$BRANCH"
+echo REGEX=$(echo "$BRANCH" | grep -o -E "$REGEX")
+echo
+
+if [[ "$REGEX" ]]; then
   echo "Your commit was rejected due to branching name"
-  echo "Please rename your branch with '(feature|bugfix)\/([a-z]+)\/([0-9]\d)\.([0-9]\d)\.([0-9]\d{3})-([\w\W]+)$"
+  echo "Please rename your branch with '$REGEX"
   exit 1
 fi
 

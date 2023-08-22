@@ -47,11 +47,11 @@ let project = Project(
             bundleId: "com.Veretennikov.SV",
             infoPlist: .extendingDefault(with: infoPlist),
             sources: [
-                "Sources/**",
-                "AppDelegate/**"
+                "ProjectFolders/Sources/**",
+                "ProjectFolders/AppDelegate/**"
             ],
             resources: [
-                "Resources/**"
+                "ProjectFolders/Resources/**"
             ],
             copyFiles: nil,
             headers: nil,
@@ -71,7 +71,7 @@ let project = Project(
             bundleId: "com.Veretennikov.SV",
             infoPlist: .default,
             sources: [
-                "Tests/**"
+                "ProjectFolders/Tests/**"
             ],
             resources: [],
             copyFiles: nil,

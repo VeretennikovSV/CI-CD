@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2789F8EF0DADFC0604A4856D /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D5C6063C0D629D8C83944 /* UnitTests.swift */; };
-		8EF67C1F8052B05B694D4822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24233B05FB72A649BF18A396 /* ViewController.swift */; };
-		B6C485E5E1D3C690FA3D8C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */; };
+		03485442CD7A9BBBD9BC1DB7 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598BCBC071015FA4FEBE96B /* UnitTests.swift */; };
+		581C45492C2910628BD0831D /* Pods_Deeplinking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155EFC38BFB96604C2D92CE5 /* Pods_Deeplinking.framework */; };
+		93148C743A39E2647D3399F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0CB78009CE0C92D0D165 /* ViewController.swift */; };
+		F3BCE6A5B545B79B751C0839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F2F46E3F13FC1D7F9349E5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +47,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24233B05FB72A649BF18A396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E96D5C6063C0D629D8C83944 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		06254EFE821426041DEA1A89 /* Pods-Deeplinking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deeplinking.release.xcconfig"; path = "Target Support Files/Pods-Deeplinking/Pods-Deeplinking.release.xcconfig"; sourceTree = "<group>"; };
+		155EFC38BFB96604C2D92CE5 /* Pods_Deeplinking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deeplinking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DA0CB78009CE0C92D0D165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		674A5E43CB200779DF532FB0 /* Pods-Deeplinking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deeplinking.debug.xcconfig"; path = "Target Support Files/Pods-Deeplinking/Pods-Deeplinking.debug.xcconfig"; sourceTree = "<group>"; };
+		9598BCBC071015FA4FEBE96B /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		D7F2F46E3F13FC1D7F9349E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAA516B1CC6D49A470F3F803 /* DeeplinkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DeeplinkingTests-Info.plist"; sourceTree = "<group>"; };
 		EB9E32BE3FCEC5EA0031D9BA /* DeeplinkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeeplinkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA06B872DC0930A61003FAD /* Deeplinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deeplinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581C45492C2910628BD0831D /* Pods_Deeplinking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +81,29 @@
 		0080FB3F1E003374A8188A8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				155EFC38BFB96604C2D92CE5 /* Pods_Deeplinking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C2898CB9DD500A990FAC44D /* ProjectFolders */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB642B1C118F640816685D /* AppDelegate */,
+				541D81362E23191A1B0FEA36 /* Sources */,
+				85F0B5842316F795D4414CFC /* Tests */,
+			);
+			path = ProjectFolders;
+			sourceTree = "<group>";
+		};
+		32E5898D154729D07FEC08C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				674A5E43CB200779DF532FB0 /* Pods-Deeplinking.debug.xcconfig */,
+				06254EFE821426041DEA1A89 /* Pods-Deeplinking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		41E5F4C025F56149A38FFF5A = {
@@ -86,29 +112,30 @@
 				E2BAC8FBCEC733FDA29A3F10 /* Project */,
 				0080FB3F1E003374A8188A8C /* Frameworks */,
 				FE501E3C968216342DBE918A /* Products */,
+				32E5898D154729D07FEC08C0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		4C6BBEFC76DA373BE9C647A3 /* Sources */ = {
+		541D81362E23191A1B0FEA36 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				24233B05FB72A649BF18A396 /* ViewController.swift */,
+				63DA0CB78009CE0C92D0D165 /* ViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		5C121D3CFF2D3C743BF6E86E /* UnitTests */ = {
+		5F5EC78CC7073F2FA070B0F5 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				E96D5C6063C0D629D8C83944 /* UnitTests.swift */,
+				9598BCBC071015FA4FEBE96B /* UnitTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		5C64D9720078E023659C289D /* AppDelegate */ = {
+		6FAB642B1C118F640816685D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				A18ADA290BFC6E1752BF80C7 /* AppDelegate.swift */,
+				D7F2F46E3F13FC1D7F9349E5 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -122,6 +149,14 @@
 			path = InfoPlists;
 			sourceTree = "<group>";
 		};
+		85F0B5842316F795D4414CFC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5EC78CC7073F2FA070B0F5 /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		9ED5028AF0829C876354B6C6 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,21 +165,11 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
-		B208D1DF959534014A50A2AA /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5C121D3CFF2D3C743BF6E86E /* UnitTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		E2BAC8FBCEC733FDA29A3F10 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				5C64D9720078E023659C289D /* AppDelegate */,
 				9ED5028AF0829C876354B6C6 /* Derived */,
-				4C6BBEFC76DA373BE9C647A3 /* Sources */,
-				B208D1DF959534014A50A2AA /* Tests */,
+				2C2898CB9DD500A990FAC44D /* ProjectFolders */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -165,10 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29022AF8F5024961B5FEF348 /* Build configuration list for PBXNativeTarget "Deeplinking" */;
 			buildPhases = (
+				231682246D00C6D7BDF38745 /* [CP] Check Pods Manifest.lock */,
 				8DB4A65B1F1CA5DB953CAF3B /* Sources */,
 				ACD8C851A8FF1780B0CC984B /* Resources */,
 				6BA315455473610C1ECBE9D2 /* Embed Frameworks */,
 				DE93FB2A5739CD20AE169952 /* Frameworks */,
+				9D9C0708A9BB89A695A91EAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,12 +274,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		231682246D00C6D7BDF38745 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deeplinking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9C0708A9BB89A695A91EAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deeplinking/Pods-Deeplinking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		221A5E5A5A923E1E83BDB1F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2789F8EF0DADFC0604A4856D /* UnitTests.swift in Sources */,
+				03485442CD7A9BBBD9BC1DB7 /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C485E5E1D3C690FA3D8C16 /* AppDelegate.swift in Sources */,
-				8EF67C1F8052B05B694D4822 /* ViewController.swift in Sources */,
+				F3BCE6A5B545B79B751C0839 /* AppDelegate.swift in Sources */,
+				93148C743A39E2647D3399F6 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +507,7 @@
 		};
 		B199E85FFAF364407F940A51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06254EFE821426041DEA1A89 /* Pods-Deeplinking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -459,6 +529,7 @@
 		};
 		E5E9E50D8C69CB3514C5CB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674A5E43CB200779DF532FB0 /* Pods-Deeplinking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
