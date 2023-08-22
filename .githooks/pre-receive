@@ -6,21 +6,18 @@
 #
 # To enable this hook, rename this file to "pre-receive".
 
-echo sock my cock
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+REGEX="^(feature|bugfix)\/([a-z]+)\/([0-9]\d)\.([0-9]\d)\.([0-9]\d{3})-([\w\W]+)$"
 
-if test -n "$GIT_PUSH_OPTION_COUNT"
-then
-	i=0
-	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
-	do
-		eval "value=\$GIT_PUSH_OPTION_$i"
-		case "$value" in
-		echoback=*)
-			echo sock my cock
-			;;
-		reject)
-			exit 1
-		esac
-		i=$((i + 1))
-	done
+echo
+printf "\n[pre-push-hook] Parsed branch name: %s." "$BRANCH"
+echo REGEX=$(echo "$BRANCH" | grep -o -E "$REGEX")
+echo
+
+if [[ -z "$REGEX" ]]; then
+  echo "Your commit was rejected due to branching name"
+  echo "Please rename your branch with '$REGEX"
+  exit 1
 fi
+
+exit 0

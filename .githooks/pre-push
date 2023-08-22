@@ -26,7 +26,7 @@ printf "\n[pre-push-hook] Parsed branch name: %s." "$BRANCH"
 echo REGEX=$(echo "$BRANCH" | grep -o -E "$REGEX")
 echo
 
-if [[ "$REGEX" ]]; then
+if [[ -z "$REGEX" ]]; then
   echo "Your commit was rejected due to branching name"
   echo "Please rename your branch with '$REGEX"
   exit 1
